@@ -16,7 +16,7 @@ Binaries in `bin/` directory.
 ## Package & Deploy
 
 ```bash
-export V=4.0.200
+export V=4.0.203
 ```
 
 ### Build Multiarch Image
@@ -44,6 +44,7 @@ helm package charts/nfs-subdir-external-provisioner --version=$V --app-version=$
 ```bash
 git checkout gh-pages
 cp bin/nfs-subdir-external-provisioner-${V}.tgz .
+helm repo index . --url https://abeytom07.github.io/nfs-subdir-external-provisioner/
 git commit -m "Helm chart of $V"
 git push
 ```
