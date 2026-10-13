@@ -1,7 +1,7 @@
 # Build Instructions
 
 ## Prerequisites
-- Go 1.26.5+
+- Go 1.27.2+
 - Docker
 
 ## Build Binary
